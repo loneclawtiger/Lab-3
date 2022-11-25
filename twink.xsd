@@ -1,0 +1,38 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.example.org/sample"
+xmlns:mca="http://www.example.org/sample" 
+elementFormDefault="qualified">
+    <xs:element name = "college">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="student" minOccurs="1" maxOccurs="5">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name = "stu-name" type="xs:string"/>
+                            <xs:element name = "stu-Course" type="xs:string"/>
+                            <xs:element name = "stu-Sem" type="xs:string"/>
+                            <xs:element name = "stu-sub1" type="mca:MyMarks"/>
+                            <xs:element name = "stu-sub2" type="mca:MyMarks"/>
+                            <xs:element name = "stu-sub3" type="mca:MyMarks"/>
+                            <xs:element name ="stu-Total" type="mca:Marks"/>
+                            <xs:element name="stu-Avg" type="mca:MyMarks"/> 
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="Marks">
+        <xs:restriction  base= "xs:integer"> 
+            <xs:minExclusive value="0"></xs:minExclusive>
+            <xs:maxExclusive value="300"></xs:maxExclusive>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="MyMarks">
+        <xs:restriction  base= "xs:integer"> 
+            <xs:minExclusive value="0"></xs:minExclusive>
+            <xs:maxExclusive value="100"></xs:maxExclusive>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

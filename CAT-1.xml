@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="twink.xsl"?>
+<college xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:SchemaLocation="twink.xsd">
+    <student>
+        <stu-name>
+                Twinkle Gupta
+            </stu-name>
+        <stu-Course>
+                MCA
+            </stu-Course>
+        <Stu-Sem>
+                2nd sem
+            </Stu-Sem>
+        <stu-sub1>
+                39
+            </stu-sub1>
+        <stu-sub2>
+                43
+            </stu-sub2>
+        <stu-sub3>
+                41
+            </stu-sub3>
+        <stu-Total>
+                123
+            </stu-Total>
+        <stu-Avg>
+                41
+            </stu-Avg>
+    </student>
+</college>
