@@ -16,7 +16,7 @@ elementFormDefault="qualified">
                             <xs:element name = "stu-sub2" type="mca:MyMarks"/>
                             <xs:element name = "stu-sub3" type="mca:MyMarks"/>
                             <xs:element name ="stu-Total" type="mca:Marks"/>
-                            <xs:element name="stu-Avg" type="mca:MyMarks"/> 
+                            <xs:element name = "stu-Avg" type="mca:MyMarks"/> 
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
